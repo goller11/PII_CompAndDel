@@ -1,0 +1,14 @@
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.csprojAssemblyReference.cache
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.csproj.CoreCompileInputs.cache
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.AssemblyInfoInputs.cache
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.AssemblyInfo.cs
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\CompAndDel.deps.json
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\CompAndDel.runtimeconfig.json
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\CompAndDel.runtimeconfig.dev.json
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\CompAndDel.dll
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\CompAndDel.pdb
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\twitterPublisher.dll
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\bin\Debug\netcoreapp2.1\twitterPublisher.pdb
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.csproj.CopyComplete
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.dll
+C:\Users\estudiante.fit\Desktop\CompAndDel-master\src\obj\Debug\netcoreapp2.1\CompAndDel.pdb
