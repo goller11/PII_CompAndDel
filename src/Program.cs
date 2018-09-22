@@ -7,17 +7,17 @@ namespace CompAndDel {
     class Program {
         static void Main (string[] args) {
 
-            PictureProvider img = new PictureProvider (); 
-            IPicture image = img.GetPicture ("BreakingBad.jpg"); // "Recoge" la imagen 
+            PictureProvider imgProvider = new PictureProvider (); 
+            IPicture pictureP = imgProvider.GetPicture ("BreakingBad.jpg"); // "Recoge" la imagen 
 
-            IFilter negative = new FilterNegative (); // Creación del filtro negativo
-            IFilter twitterPub = new TwitterFilter (); //Creación del filtro de Twitter para publicar
+            IFilter negativeFilter = new FilterNegative (); // Creación del filtro negativo
+            IFilter twitterFilter = new TwitterFilter (); //Creación del filtro de Twitter para publicar
 
-            IPipe end = new PipeNull (); // Pipe donde termina el programa
-            IPipe twitter = new PipeSerial (twitterPub, end); // PipeSerial para publicar en Twitter y llevar la imagen al último Pipe
-            IPipe serial = new PipeSerial (negative, twitter); // PipeSerial para aplicarle el filtro NEGATIVO y pasaje al segundo Pipe 
+            IPipe pipeEnd = new PipeNull (); // Pipe donde termina el programa
+            IPipe pipeTwitter = new PipeSerial (twitterPub, pipeEnd); // PipeSerial para publicar en Twitter y llevar la imagen al último Pipe
+            IPipe pipeSerial = new PipeSerial (negativeFilter, pipeTwitter); // PipeSerial para aplicarle el filtro NEGATIVO y pasaje al segundo Pipe 
 
-            img.SavePicture (serial.Send(image), "BreakingBadNegative.jpg"); // Guarda la imagen con el nombre que se le adjudica       
+            imgProvider.SavePicture (pipeSerial.Send(pictureP), "BreakingBadNegative.jpg"); // Guarda la imagen con el nombre que se le adjudica       
 
         }
     }
