@@ -17,10 +17,7 @@ namespace CompAndDel {
             IPipe twitter = new PipeSerial (twitterPub, end);
             IPipe serial = new PipeSerial (negative, twitter);
 
-            img.SavePicture (serial.Send(image), "BreakingBadNegative.jpg");
-
-            
-            
+            img.SavePicture (serial.Send(image), "BreakingBadNegative.jpg");          
 
         }
     }

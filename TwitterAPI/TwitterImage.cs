@@ -114,7 +114,7 @@ namespace twitterPublisher
         {
             // log exception somewhere
             return "Unknown error publishing to Twitter";
-        }
+        } 
     }
 
     /// <summary>
