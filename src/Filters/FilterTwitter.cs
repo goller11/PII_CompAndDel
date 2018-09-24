@@ -8,10 +8,10 @@ using twitterPublisher;
 
 namespace CompAndDel.Filters {
     public class TwitterFilter : IFilter {
-        string consumerKey = "XnIleywqqB5rO00H7SMJdMekX";
-        string consumerKeySecret = "hI5ugPxcSaJhkznhLUxNr1IiTfsIHFcva2rqCiXhL7M92kSi3p";
-        string accessToken = "1017550784354021376-6dzrn5TPasnEynp4wZ224XfUwdaLKn";
-        string accessTokenSecret = "b1Qqhryvvrgd0TNRoNZbipocNonKfeCnkvdEtrAAcs278";
+        string consumerKey = "";
+        string consumerKeySecret = "";
+        string accessToken = "";
+        string accessTokenSecret = "";
 
         public IPicture Filter (IPicture image) {
 
