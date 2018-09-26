@@ -21,7 +21,7 @@ namespace CompAndDel {
             IPipe pipeSerial = new PipeSerial (blurFilter, pipeEnd); // PipeSerial para aplicarle el filtro NEGATIVO y pasaje al segundo Pipe 
             IPipe pipeSerial2 = new PipeSerial(negativeFilter, pipeEnd);
             
-            imgProvider.SavePicture (pipeSerial.Send (pictureP), "BreakingBADBlur.jpg"); // Guarda la imagen con el nombre que se le adjudica       
+            imgProvider.SavePicture (pipeSerial.Send (pictureP), "BreakingBadBlur.jpg"); // Guarda la imagen con el nombre que se le adjudica       
             imgProvider.SavePicture (pipeSerial2.Send(pictureP), "BreakingBadNegative.jpg");
         }
     }
