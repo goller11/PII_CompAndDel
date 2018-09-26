@@ -6,24 +6,35 @@ using CompAndDel;
 
 namespace CompAndDel.Filters.Pipes {
     class PipeConditional : IPipe {
+
+        protected IFilter filtro;
         protected IFilterBool filtroBool;
-        protected IPipe nextPipe;
+        protected IPipe nextPipeTrue;
+        protected IPipe nextPipeFalse;
 
         /// <summary>
         /// La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
         /// </summary>
         /// <param name="filtro">Filtro que se debe aplicar sobre la imagen</param>
         /// <param name="nextPipe">Siguiente cañería</param>
-        public PipeConditional (IFilterBool filtroBool, IPipe nextPipe) 
-        {
-            this.filtroBool = filtroBool;
-            this.nextPipe = nextPipe;
+        public PipeConditional (IFilter filtro, IPipe nextPipeTrue, IPipe nextPipeFalse) {
+            this.filtro = filtro;
+            this.nextPipeTrue = nextPipeTrue;
+            this.nextPipeFalse = nextPipeFalse;
         }
         /// <summary>
         /// Devuelve el proximo IPipe
         /// </summary>
         public IPipe Next {
-            get { return this.nextPipe; }
+            get {
+                if (this.)
+
+                    return this.nextPipeTrue;
+            }
+        }
+
+        public IPipe NextFalse {
+            get { return this.nextPipeFalse; }
         }
         /// <summary>
         /// Devuelve el IFilter que aplica este pipe

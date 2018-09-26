@@ -13,6 +13,6 @@ namespace CompAndDel {
         /// </summary>
         /// <param name="image">La imagen a procesar</param>
         /// <returns>La misma imagen o una nueva imagen creada por el filtro</returns>
-        bool Filter (IPicture image);
+        bool Filter ();
     }
 }
