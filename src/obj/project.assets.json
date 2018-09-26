@@ -983,11 +983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "projectUniqueName": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
       "projectName": "CompAndDel",
-      "projectPath": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
       "packagesPath": "C:\\Users\\estudiante.fit\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\obj\\",
+      "outputPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1004,8 +1004,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
-              "projectPath": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
+            "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
+              "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
             }
           }
         }

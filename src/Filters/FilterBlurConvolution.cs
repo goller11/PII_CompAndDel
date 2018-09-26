@@ -8,22 +8,15 @@ namespace CompAndDel.Filters
     {
         protected int[,] matrizParametros;
         protected int complemento, divisor;
+
+        public IConvolution matriz;
         /// <summary>
         /// Filtro complejo que suaviza los bordes de una imagen.
         /// </summary>
         /// <param name="name">Nombre del objeto</param>
-        public FilterBlurConvolution()
+        public FilterBlurConvolution(IConvolution matriz)
         {
-            this.matrizParametros = new int[3, 3];
-            this.complemento = 0;
-            this.divisor = 9;
-            for (int x = 0; x < 3; x++)
-            {
-                for (int y = 0; y < 3; y++)
-                {
-                    matrizParametros[x, y] = 1;
-                }
-            }
+            this.matriz = matriz;
         }
         /// <summary>
         /// Recibe una imagen y la retorna con el filtro aplicado.
