@@ -10,10 +10,10 @@ namespace CompAndDel {
             PictureProvider imgProvider = new PictureProvider ();
             IPicture pictureP = imgProvider.GetPicture ("BreakingBad.jpg"); // "Recoge" la imagen 
 
-            BlurConvolutionMatriz matrix = new BlurConvolutionMatriz();
+            IConvolution matrix = new BlurConvolutionMatriz();
 
             IFilter negativeFilter = new FilterNegative (); // Creación del filtro negativo
-            IFilter blurFilter = new FilterBlurConvolution (matrix);
+            IFilter blurFilter = new FilterConvolution (matrix);
             IFilter twitterFilter = new TwitterFilter (); //Creación del filtro de Twitter para publicar
 
             IPipe pipeEnd = new PipeNull (); // Pipe donde termina el programa

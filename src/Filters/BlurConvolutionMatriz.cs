@@ -14,16 +14,16 @@ namespace CompAndDel {
 
         public BlurConvolutionMatriz () 
         {  
-        this.MatrizConvolution = new int[3, 3];
-        this.Complemento = 0;
-        this.Divisor = 9;
-        for (int x = 0; x < 3; x++) 
-        {
-                for (int y = 0; y < 3; y++) 
-                {
-                    MatrizConvolution[x, y] = 1;
-                }
-        }
+            this.MatrizConvolution = new int[3, 3];
+            this.Complemento = 0;
+            this.Divisor = 9;
+            for (int x = 0; x < 3; x++) 
+            {
+                    for (int y = 0; y < 3; y++) 
+                    {
+                        MatrizConvolution[x, y] = 1;
+                    }
+            }
         }
 
     }
