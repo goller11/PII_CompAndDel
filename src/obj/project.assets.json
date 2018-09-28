@@ -1025,8 +1025,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj": {
-              "projectPath": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj"
+            "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj": {
+              "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj"
             },
             "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
               "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"

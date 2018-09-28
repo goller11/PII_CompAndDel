@@ -24,9 +24,9 @@ namespace CompAndDel {
             PipeSerial pipeBlur = new PipeSerial (blurFilter, pipeEnd);
             PipeSerial pipeNegative = new PipeSerial (negativeFilter, pipeEnd);
 
-            PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeBlur, pipeNegative);
+            PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeTwitter, pipeNegative);
 
-            imgProvider.SavePicture (pipeFace.Send (pictureProv), "VikingsTwitter.jpg");
+            imgProvider.SavePicture (pipeFace.Send(pictureProv), "VikingsToTwitter.jpg");
         }
     }
 }
