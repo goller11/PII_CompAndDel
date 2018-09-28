@@ -15,14 +15,16 @@ namespace CompAndDel {
             IFilter blurFilter = new FilterConvolution (matrix);
             IFilter negativeFilter = new FilterNegative (); // Creación del filtro negativo
             IFilter twitterFilter = new TwitterFilter (); //Creación del filtro de Twitter para publicar
+            FilterCognitive faceRecognition = new FilterCognitive();
 
             IPipe pipeEnd = new PipeNull (); // Pipe donde termina el programa
             //IPipe pipeTwitter = new PipeSerial (twitterPub, pipeEnd); // PipeSerial para publicar en Twitter y llevar la imagen al último Pipe
-            IPipe pipeSerial = new PipeSerial (blurFilter, pipeEnd); // PipeSerial para aplicarle el filtro NEGATIVO y pasaje al segundo Pipe 
-            IPipe pipeSerial2 = new PipeSerial (negativeFilter, pipeEnd);
+            IPipe pipeBlur = new PipeSerial (blurFilter, pipeEnd); // PipeSerial para aplicarle el filtro NEGATIVO y pasaje al segundo Pipe 
+            IPipe pipeNegative = new PipeSerial (negativeFilter, pipeEnd);
+            PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeEnd, pipeNegative)
 
-            imgProvider.SavePicture (pipeSerial.Send (pictureP), "BreakingBadBlur.jpg"); // Guarda la imagen con el nombre que se le adjudica       
-            imgProvider.SavePicture (pipeSerial2.Send (pictureP), "BreakingBadNegative.jpg");
+            imgProvider.SavePicture (pipeFace.Send (pictureP), "BreakingBadFace.jpg"); // Guarda la imagen con el nombre que se le adjudica       
+            imgProvider.SavePicture (pipeNegative.Send (pictureP), "BreakingBadNegative.jpg");
         }
     }
 }

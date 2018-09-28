@@ -4,14 +4,14 @@ using CompAndDel;
 
 namespace CompAndDel.Filters
 {
-    public class FilterConvolution : IFilter
+    public class FilterBlurConvolution : IFilter
     {
         private IConvolutionMatrix matrix;
         /// <summary>
         /// Filtro complejo que suaviza los bordes de una imagen.
         /// </summary>
         /// <param name="name">Nombre del objeto</param>
-        public FilterConvolution(IConvolutionMatrix matrix)
+        public FilterBlurConvolution(IConvolutionMatrix matrix)
         {
             this.matrix = matrix;
         }

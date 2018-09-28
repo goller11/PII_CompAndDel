@@ -1,30 +1,29 @@
 using System;
 using System.Drawing;
-using CompAndDel.Filters.Pipes;
+using CompAndDel;
 
-namespace CompAndDel {
-    public class BlurConvolutionMatriz : IConvolution
-
+namespace CompAndDel.Filters
+{
+    public class BlurConvolutionMatrix : IConvolutionMatrix
     {
-        public int[,] MatrizConvolution { get; set; }
+        public int[,] MatrixElements {get; private set;}
+        
+        public int Complement {get; private set;}
+        public int Divisor {get; private set;}
 
-        public int Complemento { get; set; }
-
-        public int Divisor { get; set; }
-
-        public BlurConvolutionMatriz () 
-        {  
-            this.MatrizConvolution = new int[3, 3];
-            this.Complemento = 0;
+        public BlurConvolutionMatrix()
+        {
+            this.MatrixElements = new int[3,3];
+            this.Complement = 0;
             this.Divisor = 9;
-            for (int x = 0; x < 3; x++) 
+            
+            for (int x = 0; x < 3 ; x++)
             {
-                    for (int y = 0; y < 3; y++) 
-                    {
-                        MatrizConvolution[x, y] = 1;
-                    }
+                for (int y = 0; y < 3; y++)
+                {
+                    MatrixElements[x,y] = 1;
+                }
             }
         }
-
     }
 }
