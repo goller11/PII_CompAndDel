@@ -6,12 +6,12 @@ namespace CompAndDel.Filters
 {
     public class FilterBlurConvolution : IFilter
     {
-        private IConvolutionMatrix matrix;
+        private IConvolution matrix;
         /// <summary>
         /// Filtro complejo que suaviza los bordes de una imagen.
         /// </summary>
         /// <param name="name">Nombre del objeto</param>
-        public FilterBlurConvolution(IConvolutionMatrix matrix)
+        public FilterBlurConvolution(IConvolution matrix)
         {
             this.matrix = matrix;
         }
@@ -46,9 +46,9 @@ namespace CompAndDel.Filters
             {
                 for (int y = 0; y < matrizVecinos.GetLength(1); y++)
                 {
-                    redFinal += matrizVecinos[x, y].R * this.matrix.MatrixElements[x, y]; 
-                    greenFinal += matrizVecinos[x, y].G * this.matrix.MatrixElements[x, y]; 
-                    blueFinal += matrizVecinos[x, y].B * this.matrix.MatrixElements[x, y];        
+                    redFinal += matrizVecinos[x, y].R * this.matrix.MatrizParametros[x, y]; 
+                    greenFinal += matrizVecinos[x, y].G * this.matrix.MatrizParametros[x, y]; 
+                    blueFinal += matrizVecinos[x, y].B * this.matrix.MatrizParametros[x, y];        
                 }
             }
             redFinal = Math.Abs((redFinal/this.matrix.Divisor) + this.matrix.Complement);

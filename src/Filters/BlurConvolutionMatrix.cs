@@ -4,16 +4,16 @@ using CompAndDel;
 
 namespace CompAndDel.Filters
 {
-    public class BlurConvolutionMatrix : IConvolutionMatrix
+    public class BlurConvolutionMatriz : IConvolution
     {
-        public int[,] MatrixElements {get; private set;}
+        public int[,] MatrizParametros {get; private set;}
         
         public int Complement {get; private set;}
         public int Divisor {get; private set;}
 
-        public BlurConvolutionMatrix()
+        public BlurConvolutionMatriz()
         {
-            this.MatrixElements = new int[3,3];
+            this.MatrizParametros = new int[3,3];
             this.Complement = 0;
             this.Divisor = 9;
             
@@ -21,7 +21,7 @@ namespace CompAndDel.Filters
             {
                 for (int y = 0; y < 3; y++)
                 {
-                    MatrixElements[x,y] = 1;
+                    MatrizParametros[x,y] = 1;
                 }
             }
         }

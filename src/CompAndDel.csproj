@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TwitterAPI\twitterPublisher.csproj" />
+    <ProjectReference Include="..\CognitiveUCU\CognitiveCore.csproj" />
   </ItemGroup>
 </Project>

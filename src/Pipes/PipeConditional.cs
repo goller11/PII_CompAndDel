@@ -6,11 +6,11 @@ using CompAndDel;
 
 namespace CompAndDel.Filters.Pipes
 {
-    class PipeConditional : IPipe
+    public class PipeConditional : IPipe
     {
-        protected IFilterBool filtro;
-        protected IPipe nextPipeTrue;
-        protected IPipe nextPipeFalse;
+        public IFilterBool filtroBool;
+        public IPipe nextPipeTrue;
+        public IPipe nextPipeFalse;
         
         /// <summary>
         /// La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
@@ -19,23 +19,13 @@ namespace CompAndDel.Filters.Pipes
         /// <param name="nextPipe">Siguiente cañería</param>
         public PipeConditional(IFilterBool filtro, IPipe nextPipeTrue, IPipe nextPipeFalse)
         {
+            this.filtroBool = filtro;            
             this.nextPipeTrue = nextPipeTrue;
             this.nextPipeFalse = nextPipeFalse;
-            this.filtro = filtro;
         }
-        /// <summary>
-        /// Devuelve el proximo IPipe
-        /// </summary>
-/*         public IPipe Next
+        public IFilter filter
         {
-            get { return this.nextPipe; }
-        } */
-        /// <summary>
-        /// Devuelve el IFilter que aplica este pipe
-        /// </summary>
-        public IFilter Filter
-        {
-            get { return this.filtro; }
+            get { return this.filtroBool; }
         }
         /// <summary>
         /// Recibe una imagen, le aplica un filtro y la envía al siguiente Pipe
@@ -43,17 +33,18 @@ namespace CompAndDel.Filters.Pipes
         /// <param name="picture">Imagen a la cual se debe aplicar el filtro</param>
         public IPicture Send(IPicture picture)
         {
-            picture = this.filtro.Filter(picture);
+            IPicture picture1 = this.filtroBool.Filter(picture);
 
-            if (this.filtro.Boolean)
+            if (this.filtroBool.FaceOrNot)
             {
                 Console.WriteLine("Face Found! :)");
-                return this.nextPipeTrue.Send(picture);
+                return this.nextPipeTrue.Send(picture1);
             }
             else
             {
                 Console.WriteLine("No Face Found :(");
-                return this.nextPipeFalse.Send(picture);
+                return this.nextPipeFalse.Send(picture1);
+
             }
         }
     }
