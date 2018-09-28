@@ -8,6 +8,7 @@ using CognitiveCore;
 namespace CompAndDel.Filters.Pipes {
         class PipeConditional : IPipe {
 
+<<<<<<< HEAD
                 public bool FaceOrNot;
                 protected IFilter filtro;
                 protected IPipe nextPipeTrue;
@@ -59,3 +60,41 @@ namespace CompAndDel.Filters.Pipes {
                     }
                 
         }
+=======
+        protected IFilterBool filtroBool;
+        protected IPipe nextPipeTrue;
+        protected IPipe nextPipeFalse;
+
+        /// <summary>
+        /// La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
+        /// </summary>
+        /// <param name="filtro">Filtro que se debe aplicar sobre la imagen</param>
+        /// <param name="nextPipe">Siguiente cañería</param>
+        public PipeConditional (IFilterBool filtroBool, IPipe nextPipeTrue, IPipe nextPipeFalse) {
+            this.filtroBool = filtroBool;
+            this.nextPipeTrue = nextPipeTrue;
+            this.nextPipeFalse = nextPipeFalse;
+        }
+        
+        public IFilter Filter {
+            get { return this.filtroBool; }
+        }
+
+    public IPicture Send(IPicture picture)
+        {
+            picture = this.filtro.Filter(picture);
+
+            if (this.filtro.Boolean)
+            {
+                Console.WriteLine("Face Found! :)");
+                return this.nextPipeTrue.Send(picture);
+            }
+            else
+            {
+                Console.WriteLine("No Face Found :(");
+                return this.nextPipeFalse.Send(picture);
+            }
+        }
+    }
+}
+>>>>>>> aad7c5f5d0f8b4d38ae26de86524263a1cf268f6
