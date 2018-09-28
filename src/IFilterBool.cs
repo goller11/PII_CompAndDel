@@ -4,6 +4,6 @@ namespace CompAndDel.Filters {
     public interface IFilterBool : IFilter {
         bool FaceOrNot {get;}
 
-        IPicture Filter(IPicture image);
+        //IPicture Filter(IPicture image);
     }
 }
