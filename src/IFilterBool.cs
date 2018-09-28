@@ -1,11 +1,9 @@
 using System;
-using CompAndDel;
-
 
 namespace CompAndDel.Filters {
     public interface IFilterBool : IFilter {
-        bool FaceOrNot { get; }
+        bool FaceOrNot { get; set;}
 
-        IPicture Filter (IPicture image);
+        IPicture Filter(IPicture image);
     }
 }
