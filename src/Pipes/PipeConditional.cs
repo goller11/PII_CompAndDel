@@ -7,7 +7,6 @@ using CompAndDel;
 namespace CompAndDel.Filters.Pipes {
     class PipeConditional : IPipe {
 
-        protected IFilter filtro;
         protected IFilterBool filtroBool;
         protected IPipe nextPipeTrue;
         protected IPipe nextPipeFalse;
@@ -24,7 +23,7 @@ namespace CompAndDel.Filters.Pipes {
         }
         
         public IFilter Filter {
-            get { return this.filtro; }
+            get { return this.filtroBool; }
         }
 
     public IPicture Send(IPicture picture)
