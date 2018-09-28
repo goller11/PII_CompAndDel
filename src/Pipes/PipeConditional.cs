@@ -41,5 +41,5 @@ namespace CompAndDel.Filters.Pipes {
                 return this.nextPipeFalse.Send(picture);
             }
         }
-}
+    }
 }
