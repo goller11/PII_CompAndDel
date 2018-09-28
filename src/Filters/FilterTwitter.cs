@@ -14,10 +14,11 @@ namespace CompAndDel.Filters {
         /// <param name="image">Imagen a la cual se le va a plicar el filtro.</param>
         /// <returns>Imagen con el filtro aplicado</returns>
         public IPicture Filter (IPicture image) {
-            string consumerKey = "XnIleywqqB5rO00H7SMJdMekX";
-            string consumerKeySecret = "hI5ugPxcSaJhkznhLUxNr1IiTfsIHFcva2rqCiXhL7M92kSi3p";
-            string accessToken = "1017550784354021376-6dzrn5TPasnEynp4wZ224XfUwdaLKn";
-            string accessTokenSecret = "b1Qqhryvvrgd0TNRoNZbipocNonKfeCnkvdEtrAAcs278";
+            
+            string consumerKey = "dtOgpyjBBXglAzMEjMMZtFf73";
+            string consumerKeySecret = "Qzm0FxotJ9YyoXiGLJ4JI9IZFWmYvB4LWpteWPGVYofxSG4FnN";
+            string accessToken = "1396065818-13uONd7FgFVXhW1xhUCQshKgGv4UOnKeDipg4cz";
+            string accessTokenSecret = "HXtlP1SRnJCL5a37R98hFrIRlEIouZX3Ra4s6JuFOpXZF";
 
             PictureProvider pictureProvider = new PictureProvider ();
             
