@@ -309,6 +309,21 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "CognitiveCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0",
+          "Newtonsoft.Json": "11.0.2",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0005"
+        },
+        "compile": {
+          "bin/placeholder/CognitiveCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CognitiveCore.dll": {}
+        }
+      },
       "twitterPublisher/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -963,6 +978,11 @@
         "version.txt"
       ]
     },
+    "CognitiveCore/1.0.0": {
+      "type": "project",
+      "path": "../CognitiveUCU/CognitiveCore.csproj",
+      "msbuildProject": "../CognitiveUCU/CognitiveCore.csproj"
+    },
     "twitterPublisher/1.0.0": {
       "type": "project",
       "path": "../TwitterAPI/twitterPublisher.csproj",
@@ -971,29 +991,30 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CognitiveCore >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "SixLabors.ImageSharp.Drawing >= 1.0.0-beta0005",
       "twitterPublisher >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estudiante.fit\\.nuget\\packages\\": {},
+    "C:\\Users\\Vogel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "projectUniqueName": "C:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
       "projectName": "CompAndDel",
-      "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
-      "packagesPath": "C:\\Users\\estudiante.fit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\obj\\",
+      "projectPath": "C:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "packagesPath": "C:\\Users\\Vogel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\estudiante.fit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Vogel\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -1004,8 +1025,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
-              "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
+            "c:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj": {
+              "projectPath": "c:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj"
+            },
+            "C:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
+              "projectPath": "C:\\Users\\Vogel\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
             }
           }
         }
