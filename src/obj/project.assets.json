@@ -998,23 +998,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vogel\\.nuget\\packages\\": {},
+    "C:\\Users\\estudiante.fit\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "projectUniqueName": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
       "projectName": "CompAndDel",
-      "projectPath": "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\src\\CompAndDel.csproj",
-      "packagesPath": "C:\\Users\\Vogel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\src\\obj\\",
+      "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\CompAndDel.csproj",
+      "packagesPath": "C:\\Users\\estudiante.fit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vogel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\estudiante.fit\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -1025,11 +1025,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj": {
-              "projectPath": "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj"
+            "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj": {
+              "projectPath": "c:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\CognitiveUCU\\CognitiveCore.csproj"
             },
-            "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
-              "projectPath": "C:\\Users\\Vogel\\Desktop\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
+            "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj": {
+              "projectPath": "C:\\Users\\estudiante.fit\\Documents\\VOGEL_Repos\\PII_CompAndDel\\TwitterAPI\\twitterPublisher.csproj"
             }
           }
         }
