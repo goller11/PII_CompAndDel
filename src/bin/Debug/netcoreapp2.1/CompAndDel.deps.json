@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "CompAndDel/1.0.0": {
         "dependencies": {
+          "CognitiveCore": "1.0.0",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0005",
           "twitterPublisher": "1.0.0"
         },
@@ -93,6 +94,15 @@
           }
         }
       },
+      "CognitiveCore/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0005"
+        },
+        "runtime": {
+          "CognitiveCore.dll": {}
+        }
+      },
       "twitterPublisher/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -171,6 +181,11 @@
       "sha512": "sha512-qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    },
+    "CognitiveCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "twitterPublisher/1.0.0": {
       "type": "project",

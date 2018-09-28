@@ -8,14 +8,19 @@ using CompAndDel;
 
 namespace CompAndDel.Filters {
     public class FilterCognitive : IFilterBool {
-        CognitiveFace cogni = new CognitiveFace ("6cc93ca750fc4e0b9b716925f303dcc1", Color.GreenYellow);
+        CognitiveFace cognitiveFace = new CognitiveFace ("6cc93ca750fc4e0b9b716925f303dcc1", Color.GreenYellow);
+        public bool FaceOrNot { get; set; }
 
-        public IPicture Filter (IPicture cognitive) {
+        PictureProvider imgProvider = new PictureProvider ();
+        public IPicture Filter(IPicture image) {
 
-            PictureProvider img = new PictureProvider ();
-            img.SavePicture (cognitive, "Facial.jpg");
-            cogni.Recognize (@"BreakingBAD.jpg");
-            FoundFace (cogni);
+            imgProvider.SavePicture (image, "TempBreakingBAD.jpg");
+            cognitiveFace.Recognize (@"TempBreakingBAD.jpg");
+
+            FaceOrNot = cognitiveFace.FaceFound;
+
+            IPicture imagen = imgProvider.GetPicture ("tmpFace.jpg");
+            return imagen;
         }
     }
 }

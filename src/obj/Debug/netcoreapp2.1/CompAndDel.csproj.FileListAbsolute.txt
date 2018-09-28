@@ -26,3 +26,5 @@ C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\obj\Debug\netco
 C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\obj\Debug\netcoreapp2.1\CompAndDel.csproj.CopyComplete
 C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\obj\Debug\netcoreapp2.1\CompAndDel.dll
 C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\obj\Debug\netcoreapp2.1\CompAndDel.pdb
+C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\bin\Debug\netcoreapp2.1\CognitiveCore.dll
+C:\Users\estudiante.fit\Documents\VOGEL_Repos\PII_CompAndDel\src\bin\Debug\netcoreapp2.1\CognitiveCore.pdb
