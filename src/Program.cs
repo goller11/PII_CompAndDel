@@ -26,7 +26,7 @@ namespace CompAndDel {
 
             PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeTwitter, pipeNegative);
 
-            imgProvider.SavePicture (pipeFace.Send(pictureProv), "VikingsToTwitter.jpg");
+            imgProvider.SavePicture (pipeFace.Send(pictureProv), "Vikings.jpg");
         }
     }
 }
