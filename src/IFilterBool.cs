@@ -1,5 +1,4 @@
 using System;
-using CompAndDel;
 
 namespace CompAndDel.Filters {
     public interface IFilterBool : IFilter {

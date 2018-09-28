@@ -14,11 +14,11 @@ namespace CompAndDel.Filters {
         public IPicture Filter(IPicture image) {
 
             imageProvider.SavePicture (image, "TempVikings.jpg");
-            cognitiveFace.Recognize(@"..\TempVikings.jpg");
+            cognitiveFace.Recognize(@"TempVikings.jpg");
 
             FaceOrNot = cognitiveFace.FaceFound;
 
-            IPicture imagen = imageProvider.GetPicture ("tmpFace.jpg");
+            IPicture imagen = imageProvider.GetPicture ("TempVikings.jpg");
             return imagen;
         }
     }

@@ -23,10 +23,10 @@ namespace CompAndDel.Filters
             string accessTokenSecret = "HXtlP1SRnJCL5a37R98hFrIRlEIouZX3Ra4s6JuFOpXZF";
             
             PictureProvider pictureProvider = new PictureProvider();
-            pictureProvider.SavePicture(image,"BreakingBadFace.jpg");
+            pictureProvider.SavePicture(image, "VikingsTwitter.jpg");
 
-            var twitter = new TwitterImage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
-            Console.WriteLine(twitter.PublishToTwitter("Vikings ",@"VikingsFace.jpg"));
+            var twitterPub = new TwitterImage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
+            Console.WriteLine(twitterPub.PublishToTwitter("Trying", @"VikingsTwitter.jpg"));
 
             return image;
         }

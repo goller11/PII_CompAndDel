@@ -20,12 +20,13 @@ namespace CompAndDel {
 
             
             PipeNull pipeEnd = new PipeNull ();
-            //IPipe pipeTwitter = new PipeSerial (twitterFilter, pipeEnd);
+            PipeSerial pipeTwitter = new PipeSerial (twitterFilter, pipeEnd);
             PipeSerial pipeBlur = new PipeSerial (blurFilter, pipeEnd);
             PipeSerial pipeNegative = new PipeSerial (negativeFilter, pipeEnd);
-            PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeEnd, pipeNegative);
 
-            imgProvider.SavePicture (pipeFace.Send (pictureProv), "VikingsFace.jpg");
+            PipeConditional pipeFace = new PipeConditional(faceRecognition, pipeBlur, pipeNegative);
+
+            imgProvider.SavePicture (pipeFace.Send (pictureProv), "VikingsTwitter.jpg");
         }
     }
 }

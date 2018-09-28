@@ -6,14 +6,14 @@ namespace CompAndDel.Filters
 {
     public class FilterBlurConvolution : IFilter
     {
-        private IConvolution matrix;
+        private IConvolution matriz;
         /// <summary>
         /// Filtro complejo que suaviza los bordes de una imagen.
         /// </summary>
         /// <param name="name">Nombre del objeto</param>
-        public FilterBlurConvolution(IConvolution matrix)
+        public FilterBlurConvolution(IConvolution matriz)
         {
-            this.matrix = matrix;
+            this.matriz = matriz;
         }
         /// <summary>
         /// Recibe una imagen y la retorna con el filtro aplicado.
@@ -46,18 +46,18 @@ namespace CompAndDel.Filters
             {
                 for (int y = 0; y < matrizVecinos.GetLength(1); y++)
                 {
-                    redFinal += matrizVecinos[x, y].R * this.matrix.MatrizParametros[x, y]; 
-                    greenFinal += matrizVecinos[x, y].G * this.matrix.MatrizParametros[x, y]; 
-                    blueFinal += matrizVecinos[x, y].B * this.matrix.MatrizParametros[x, y];        
+                    redFinal += matrizVecinos[x, y].R * this.matriz.MatrizParametros[x, y]; 
+                    greenFinal += matrizVecinos[x, y].G * this.matriz.MatrizParametros[x, y]; 
+                    blueFinal += matrizVecinos[x, y].B * this.matriz.MatrizParametros[x, y];        
                 }
             }
-            redFinal = Math.Abs((redFinal/this.matrix.Divisor) + this.matrix.Complement);
+            redFinal = Math.Abs((redFinal/this.matriz.Divisor) + this.matriz.Complement);
             redFinal = Math.Min(255, redFinal);
             
-            greenFinal = Math.Abs((greenFinal / this.matrix.Divisor) + this.matrix.Complement);
+            greenFinal = Math.Abs((greenFinal / this.matriz.Divisor) + this.matriz.Complement);
             greenFinal = Math.Min(255, greenFinal);
             
-            blueFinal = Math.Abs((blueFinal / this.matrix.Divisor) + this.matrix.Complement);
+            blueFinal = Math.Abs((blueFinal / this.matriz.Divisor) + this.matriz.Complement);
             blueFinal = Math.Min(255, blueFinal);
             return Color.FromArgb(redFinal, greenFinal, blueFinal);
         }
