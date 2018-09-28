@@ -23,7 +23,7 @@ namespace CompAndDel.Filters {
             PictureProvider pictureProvider = new PictureProvider ();
             
             var twitterPub = new TwitterImage (consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
-            Console.WriteLine (twitterPub.PublishToTwitter ("Trying", @"tmpFace.jpg"));
+            Console.WriteLine (twitterPub.PublishToTwitter ("Last check, I promise", @"tmpFace.jpg"));
 
             return image;
         }
